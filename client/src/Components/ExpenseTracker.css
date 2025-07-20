@@ -1,0 +1,131 @@
+.expense-tracker-container {
+    margin: 0;
+    background: #fff;
+    /* border-radius: 16px; */
+    /* box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10); */
+    padding: 12px 28px 24px 28px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.expense-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 24px;
+}
+
+.expense-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+    justify-content: center;
+}
+
+.expense-input {
+    flex: 1 1 120px;
+    min-width: 100px;
+    padding: 6px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f8fafc;
+    transition: border 0.2s;
+}
+
+.expense-input:focus {
+    border: 1.5px solid #3182ce;
+    outline: none;
+}
+
+.expense-add-btn {
+    background: #3182ce;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.expense-add-btn:hover {
+    background: #2563eb;
+}
+
+.expense-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expense-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f1f5f9;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 12px 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+    transition: box-shadow 0.2s;
+}
+
+.expense-list-item:hover {
+    box-shadow: 0 2px 8px rgba(49, 130, 206, 0.10);
+}
+
+.expense-info {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.expense-title-item {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.expense-amount {
+    color: #16a34a;
+    font-weight: 500;
+}
+
+.expense-category {
+    color: #64748b;
+    font-size: 0.98rem;
+}
+
+.expense-date {
+    color: #a0aec0;
+    font-size: 0.95rem;
+}
+
+.expense-delete-btn {
+    background: #e53e3e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 11px;
+    /* font-weight: 500; */
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.expense-delete-btn:hover {
+    background: #b91c1c;
+}
+
+.logout-btn:hover .logout-logo-img {
+    filter: none;
+    opacity: 0.8;
+    transform: scale(1.08);
+}
+
+.logout-btn:active .logout-logo-img {
+    opacity: 0.6;
+}
