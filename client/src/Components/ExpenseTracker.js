@@ -372,7 +372,6 @@ function ExpenseTracker() {
                                             }
                                         });
                                         return Object.entries(monthMap).map(([month, cats], idx) => {
-                                            // Format month string (e.g., 2025-06 or 2025/06 or 2025.06) to 'Jun 2025'
                                             let displayMonth = month;
                                             const match = month.match(/^(\d{4})[-/.](\d{1,2})$/);
                                             if (match) {
@@ -384,7 +383,7 @@ function ExpenseTracker() {
                                                     year: "numeric",
                                                 });
                                             }
-                                            // Aggregate by category
+
                                             const catAgg = {};
                                             cats.forEach((c) => {
                                                 if (!catAgg[c.category]) catAgg[c.category] = 0;
@@ -476,10 +475,8 @@ function ExpenseTracker() {
                                         }}
                                     >
                                         {(() => {
-                                            // Use expensesByCategory for dynamic data
                                             const data = expensesByCategory;
                                             if (!data || data.length === 0) return null;
-                                            // Get all month columns dynamically (excluding 'category')
                                             const monthKeys = Object.keys(data[0] || {}).filter(k => k !== 'category');
                                             return <>
                                                 <thead>
